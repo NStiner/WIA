@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+    <title>HTML5 Drawing</title>
+    <style type="text/css">
+        #Canvas1 {
+        border: solid 1px black;
+        }
+
+        #Canvas2 {
+            border: solid 1px black;
+        }
+
+        #Canvas3 {
+            border: solid 1px black;
+        }
+
+        #Canvas4 {
+            border: solid 1px black;
+        }
+
+        #Canvas5 {
+            border: solid 1px black;
+        }
+
+        #Canvas6 {
+            border: solid 1px black;
+        }
+
+        #Canvas7 {
+            border: solid 1px black;
+        }
+    </style>
+
+    <script src="includes/modernizr.js"></script>
+
+    <script>
+        window.onload = function(){
+            var theCanvas = document.getElementById("Canvas1");
+
+            if(theCanvas) {
+                //GET CONTEXT
+                var ctx = theCanvas.getContext("2d");
+
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <div id="container">
+        <h1>HTML5 Canvas Drawing</h1>
+    </div>
+
+<canvas id="Canvas1" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas2" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas3" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas4" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas5" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas6" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<canvas id="Canvas7" width="500" height="300">
+    Your Browser Does Not Support Canvas.
+</canvas>
+
+<!-- SOURCE IMAGE USED -->
+    <img id="logo" src="image/logo.png" width="200" height="200"  style = "display:none;">
+
+<script type="text/javascript" src = "js/main.js"></script>
+
+</body>
+</html>
