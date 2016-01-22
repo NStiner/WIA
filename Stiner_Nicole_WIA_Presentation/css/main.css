@@ -1,0 +1,53 @@
+/* Main Styles */
+
+body {
+    background-color: #939191;
+    text-align: center;
+    margin: 10px;
+
+}
+
+
+/* Headings */
+h2 {
+    font-size: 3em;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: tahoma, times-new-roman, sans-serif;
+    color: white;
+
+}
+
+/* Text */
+
+span {
+    font-size: 1em;
+    color: white;
+}
+
+
+/* list style */
+
+.done-true {
+    text-decoration: line-through;
+
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding: 10px;
+}
+
+a:active{
+    color: blue;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    color: black;
+}
+

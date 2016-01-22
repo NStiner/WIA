@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="groceryApp"> <!-- Tells AngularJS to be active in this portion of the page. In this case the entire document -->
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script> <!-- pulls angular.js from the internet -->
+    <script src="js/grocery.js"></script> <!-- linking grocery.js to index.html -->
+    <link rel="stylesheet" href="css/main.css"> <!-- linking main.css to index.html -->
+</head>
+
+
+<body>
+<h2>Grocery List</h2>
+
+<div ng-controller="GroceryListController as groceryList"> <!-- the behavior of content under this element is managed by the groceryApp that was created in grocery.js -->
+    <span id="title">{{groceryList.remaining()}} of {{groceryList.groceries.length}} remaining groceries to buy</span>
+    [ <a href="" ng-click="groceryList.archive()">Delete List</a> ]
+    <ul>
+        <li ng-repeat="grocery in groceryList.groceries">
+            <input type="checkbox" ng-model="grocery.done">
+            <span class="done-{{grocery.done}}">{{grocery.text}}</span> <!--show a line through completed tasks -->
+        </li>
+    </ul>
+    <form ng-submit="groceryList.addGrocery()"> <!-- add item into array / list -->
+        <input type="text" ng-model="groceryList.groceryText"  size="30"
+               placeholder="add new grocery item here">
+        <input class="btn-primary" type="submit" value="add">
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
